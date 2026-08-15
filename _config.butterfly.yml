@@ -219,6 +219,7 @@ pwa:
 # --------------------------------------
 wordcount:
   enable: true
+  min2read: true
 
 # --------------------------------------
 # Photo Figcaption

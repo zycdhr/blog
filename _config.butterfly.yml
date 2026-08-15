@@ -1,0 +1,270 @@
+# ===================================================================
+# Butterfly Theme Configuration
+# Docs: https://butterfly.js.org/posts/4e8de3b1/
+# ===================================================================
+
+# --------------------------------------
+# Navigation
+# --------------------------------------
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  关于: /about/ || fas fa-heart
+
+# --------------------------------------
+# Code Copy
+# --------------------------------------
+code_copy:
+  enable: true
+  style: default
+
+# --------------------------------------
+# Code Block
+# --------------------------------------
+highlight_theme: mac
+highlight_height_limit: 400
+
+# --------------------------------------
+# Social Links (Sidebar)
+# --------------------------------------
+social:
+  GitHub: https://github.com/zycdhr || fab fa-github
+  Email: mailto:yongchao@example.com || fas fa-envelope
+
+# --------------------------------------
+# Favicon & Avatar
+# --------------------------------------
+favicon: /img/favicon.png
+avatar:
+  img: /img/avatar.png
+  effect: false
+
+# --------------------------------------
+# Site Info
+# --------------------------------------
+siteinfo:
+  article: 文章
+  runtime: 运行时间
+  wordcount: 字数
+  visit: 访问量
+
+# --------------------------------------
+# Top Image
+# --------------------------------------
+default_top_img: /img/default_top_img.jpg
+
+# --------------------------------------
+# Cover
+# --------------------------------------
+cover:
+  # display the cover or not (false / true)
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  # the position of cover in home page (left / right / both)
+  position: both
+  # When cover is not set, the default cover is displayed
+  default_cover:
+    - https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.0/img/1.jpg
+    - https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.0/img/2.jpg
+    - https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.0/img/3.jpg
+    - https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.0/img/4.jpg
+    - https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.0/img/5.jpg
+    - https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.0/img/6.jpg
+
+# --------------------------------------
+# Page Anchor
+# --------------------------------------
+anchor:
+  auto_update: true
+  click_to_scroll: true
+
+# --------------------------------------
+# Search
+# --------------------------------------
+search:
+  path: /local-search.xml
+  field: post
+  content: true
+  placeholder: 搜索文章...
+
+# --------------------------------------
+# Pagination
+# --------------------------------------
+pagination:
+  prev: 上一篇
+  next: 下一篇
+
+# --------------------------------------
+# Aside
+# --------------------------------------
+aside:
+  position: right
+  card_author: true
+  card_announcement: true
+  card_categories: true
+  card_tags: true
+  card_archives: true
+  card_recent_post: true
+  card_ad: false
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    sort_order:
+    runtime_date: 2026-08-15 00:00:00
+
+# --------------------------------------
+# Bottom Right Button
+# --------------------------------------
+rightside:
+  position: fixed
+  scroll_percent: true
+  readmode: true
+  translate: false
+  aside: true
+  darkmode: true
+  chair: false
+  rocket: true
+
+# --------------------------------------
+# Background
+# --------------------------------------
+# Website background settings
+# background: url(https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.0/img/bg.jpg)
+
+# --------------------------------------
+# Theme Color
+# --------------------------------------
+theme_color:
+  enable: true
+  main: "#49B1F5"
+  paginator: "#00A4FF"
+  button_hover: "#FF7242"
+  text_selection: "#00C4B6"
+  link_color: "#49B1F5"
+  meta_color: "#858585"
+  hr_color: "#A4D8FA"
+  code_foreground: "#F47466"
+  code_background: "rgba(27, 31, 35, .05)"
+  toc_color: "#00C4B6"
+  blockquote_padding_color: "#49B1F5"
+  blockquote_background_color: "#49B1F520"
+
+# --------------------------------------
+# Font
+# --------------------------------------
+font:
+  global-font-size: 16px
+  code-font-size: 14px
+  font-family: '"-apple-system", "Noto Sans SC", "Microsoft YaHei", sans-serif'
+  code-font-family: '"Fira Code", "JetBrains Mono", Consolas, monospace'
+
+# --------------------------------------
+# Comments (Valine - optional, needs LeanCloud)
+# --------------------------------------
+# comments:
+#   use: valine
+#   text: true
+#   lazyload: true
+#   count: true
+#   card_post_count: true
+
+# --------------------------------------
+# CDN
+# --------------------------------------
+cdn:
+  js:
+    main: /js/main.js
+    utils: /js/utils.js
+  css:
+    main: /css/main.css
+
+# --------------------------------------
+# Inject
+# --------------------------------------
+inject:
+  head:
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@6.5.1/css/all.min.css">
+  bottom:
+
+# --------------------------------------
+# Footer
+# --------------------------------------
+footer:
+  owner:
+    enable: true
+    since: 2026
+  custom_text: '<p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://butterfly.js.org" target="_blank">Butterfly</a></p>'
+  copyright: true
+
+# --------------------------------------
+# Lazyload
+# --------------------------------------
+lazyload:
+  enable: true
+  field: site
+  placeholder: /img/loading.gif
+
+# --------------------------------------
+# PWA (disabled - can be enabled later)
+# --------------------------------------
+pwa:
+  enable: false
+
+# --------------------------------------
+# Word Count
+# --------------------------------------
+wordcount:
+  enable: true
+
+# --------------------------------------
+# Photo Figcaption
+# --------------------------------------
+photofigcaption: true
+
+# --------------------------------------
+# Post Meta
+# --------------------------------------
+post_meta:
+  enable: true
+  date_type: both
+  date_format: relative
+  categories: true
+  tags: true
+
+# --------------------------------------
+# Post Copyright
+# --------------------------------------
+post_copyright:
+  enable: true
+  decode: false
+  copyright_author: Yongchao Cheung
+  copyright_author_href: https://github.com/zycdhr
+  copyright_url: https://zycdhr.github.io/blog
+  copyright_info: 此文章版权归 Yongchao Cheung 所有，如有转载，请注明来自原作者
+
+# --------------------------------------
+# Toc (Table of Contents)
+# --------------------------------------
+toc:
+  enable: true
+  number: true
+  auto_open: true
+  expand_all: false
+  max_depth: 4
+
+# --------------------------------------
+# Reward
+# --------------------------------------
+reward:
+  enable: false
+
+# --------------------------------------
+# Share
+# --------------------------------------
+sharejs:
+  enable: true
+  sites: wechat,qq,weibo,twitter,facebook
